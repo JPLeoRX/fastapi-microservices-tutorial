@@ -7,6 +7,10 @@ shared-mp/build
 shared-mp/dist
 shared-mp/library_message_protocol.egg-info
 
+shared-utils/build
+shared-utils/dist
+shared-utils/library_utils.egg-info
+
 gen/generated/*
 
 # Compiled class file
