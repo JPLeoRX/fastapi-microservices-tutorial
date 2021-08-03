@@ -3,6 +3,10 @@ target/*
 *.iml
 *.idea
 
+shared-mp/build
+shared-mp/dist
+shared-mp/library_message_protocol.egg-info
+
 gen/generated/*
 
 # Compiled class file
