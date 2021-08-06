@@ -11,7 +11,7 @@ class AbstractConverter:
     def map_add_to_mo(self, item_add):
         pass
 
-    def map_update_to_mo(self, item_update):
+    def map_update_to_mo(self, item_old, item_update):
         pass
 
     def map_list_do_to_list_mo(self, item_do_list: List) -> List:
