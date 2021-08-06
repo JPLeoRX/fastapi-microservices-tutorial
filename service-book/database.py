@@ -1,11 +1,5 @@
-# pip install SQLAlchemy
-# pip install psycopg2-binary
-# pip install passlib[bcrypt]
-# pip install yoyo-migrations
-
 from yoyo import read_migrations
 from yoyo import get_backend
-
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session

@@ -2,5 +2,7 @@
 docker network create library-tutorial-network
 
 # Use port 6432 to avoid conflicting with local (non-docker) postgres
-docker build -t postgres-image . && docker run --name postgres --rm -ti --net library-tutorial-network -v /home/leo/tekleo/fastapi-microservices-tutorial/postgres/data:/var/lib/postgresql/data -p 6432:5432 -e POSTGRES_PASSWORD=qwerty postgres-image
 docker build -t postgres-image . && docker run --name postgres --rm -ti --net library-tutorial-network -p 6432:5432 -e POSTGRES_PASSWORD=qwerty postgres-image
+
+# Optional - to bind persistent volume
+docker build -t postgres-image . && docker run --name postgres --rm -ti --net library-tutorial-network -v /home/leo/tekleo/fastapi-microservices-tutorial/postgres/data:/var/lib/postgresql/data -p 6432:5432 -e POSTGRES_PASSWORD=qwerty postgres-image
