@@ -1,7 +1,7 @@
 from injectable import injectable, autowired, Autowired
 from library_message_protocol import Ping
-from .utils_id import UtilsId
-from .utils_time import UtilsTime
+from library_utils.utils_id import UtilsId
+from library_utils.utils_time import UtilsTime
 
 
 @injectable
