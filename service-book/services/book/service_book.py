@@ -2,8 +2,8 @@ from typing import List
 from sqlalchemy.orm import Session
 from library_message_protocol import Book, BookAdd, BookUpdate
 from library_utils import AbstractServiceDatabase
-from .book_do import BookDO
-from .converter_book import ConverterBook
+from services.book.book_do import BookDO
+from services.book.converter_book import ConverterBook
 from injectable import injectable, autowired, Autowired
 
 

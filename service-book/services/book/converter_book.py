@@ -1,4 +1,4 @@
-from .book_do import BookDO
+from services.book.book_do import BookDO
 from library_message_protocol import Book, BookAdd, BookUpdate
 from library_utils import AbstractConverter, UtilsId, UtilsTime
 from injectable import injectable, autowired, Autowired

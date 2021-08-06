@@ -1,0 +1,1 @@
+docker build -t library-book-image -f service-book/Dockerfile . && docker run --name library-book --rm -ti --net library-tutorial-network -p 8001:8001 library-book-image
